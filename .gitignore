@@ -1,0 +1,49 @@
+# Local Netlify folder
+.netlify
+
+# 备份文件
+*.backup
+*.backup_*
+*.before_*
+
+# 临时和测试文件
+temp_*
+test_*
+*_temp.*
+*_test.*
+
+# Node modules
+node_modules/
+
+# 临时脚本（保留主要文件）
+*.js
+*.py
+*.ps1
+*.bat
+!netlify.toml
+
+# 临时HTML文件
+*_complete.html
+*_enhanced.html
+*_final.html
+NOAI_*.html
+!NOAI_2026_StudyGuide.html
+
+# 报告文件
+*_REPORT.md
+*_report.md
+*_GUIDE.md
+*_COMPLETE.md
+*总结.md
+*报告.md
+!README.md
+
+# 其他临时文件
+photo_base64.txt
+*.sh
+
+# 保留部署所需文件
+!NOAI_2026_StudyGuide.html
+!netlify.toml
+!README.md
+!NETLIFY_DEPLOYMENT_GUIDE.md
