@@ -58,8 +58,9 @@
 
 ## 👨‍💻 作者
 
-**段凯耀 (Kaiyao Duan)**
+**Roland Duan**
 
+- 📕 小红书同名：Roland Duan
 - 专注于人工智能教育
 - 致力于让 AI 学习更简单、更有趣
 
@@ -76,6 +77,6 @@
 
 ## ©️ 版权声明
 
-Copyright © 2026 Kaiyao Duan. All rights reserved.
+Copyright © 2026 Roland Duan. All rights reserved.
 
 本网站内容受版权保护，仅供学习参考使用。未经授权，不得用于商业用途。
