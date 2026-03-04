@@ -1622,6 +1622,11 @@ displayIndent: '0'
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
+
+<!-- 内容保护 -->
+<meta name="copyright" content="© 2026 Kaiyao Duan. All rights reserved.">
+<meta name="robots" content="noindex, nofollow">
+
 </head>
 <body>
 <!-- 左侧导航栏 -->
@@ -20646,6 +20651,124 @@ if (scoreDiv) scoreDiv.classList.remove('show');
 // 清除状态
 delete quizState[unitId];
 }
+</script>
+
+
+<!-- 内容保护脚本 -->
+<script>
+// 禁用右键菜单
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('⚠️ 内容受版权保护\n\n© 2026 Kaiyao Duan\n\n如需获取资源，请联系作者。');
+    return false;
+});
+
+// 禁用常用快捷键
+document.addEventListener('keydown', function(e) {
+    // 禁用 Ctrl+S (保存)
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        alert('⚠️ 保存功能已禁用\n\n© 2026 Kaiyao Duan');
+        return false;
+    }
+
+    // 禁用 Ctrl+P (打印)
+    if (e.ctrlKey && e.key === 'p') {
+        e.preventDefault();
+        alert('⚠️ 打印功能已禁用\n\n© 2026 Kaiyao Duan');
+        return false;
+    }
+
+    // 禁用 Ctrl+U (查看源代码)
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+        return false;
+    }
+
+    // 禁用 Ctrl+C (复制，在选中文字时)
+    if (e.ctrlKey && e.key === 'c') {
+        const selection = window.getSelection();
+        if (selection.toString().length > 100) {
+            e.preventDefault();
+            alert('⚠️ 大段内容复制已禁用\n\n© 2026 Kaiyao Duan\n\n如需引用，请注明来源。');
+            return false;
+        }
+    }
+
+    // 禁用 F12 (开发者工具)
+    if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        alert('⚠️ 开发者工具已禁用\n\n© 2026 Kaiyao Duan');
+        return false;
+    }
+
+    // 禁用 Ctrl+Shift+I (开发者工具)
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+        return false;
+    }
+
+    // 禁用 Ctrl+Shift+J (控制台)
+    if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+        e.preventDefault();
+        return false;
+    }
+});
+
+// 禁用拖拽图片
+document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+        return false;
+    }
+});
+
+// 添加水印
+function addWatermark() {
+    const watermark = document.createElement('div');
+    watermark.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.03);
+        pointer-events: none;
+        z-index: 9999;
+        font-weight: bold;
+        white-space: nowrap;
+        user-select: none;
+    `;
+    watermark.textContent = '© 2026 Kaiyao Duan';
+    document.body.appendChild(watermark);
+}
+
+// 页面加载后添加水印
+window.addEventListener('load', addWatermark);
+
+// 防止内容选择
+document.addEventListener('DOMContentLoaded', function() {
+    const style = document.createElement('style');
+    style.textContent = `
+        .main-content {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .main-content h1, .main-content h2, .main-content h3,
+        .main-content h4, .main-content h5, .main-content h6 {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+    `;
+    document.head.appendChild(style);
+});
+
+console.log('%c© 2026 Kaiyao Duan - All Rights Reserved', 'color: red; font-size: 20px; font-weight: bold;');
+console.log('%c内容受版权保护，请勿盗用', 'color: red; font-size: 14px;');
 </script>
 
 </body>

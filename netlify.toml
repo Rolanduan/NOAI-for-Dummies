@@ -8,6 +8,17 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Cache-Control = "public, max-age=31536000, immutable"
+    # 额外的安全保护
+    X-Download-Options = "noopen"
+    X-Robots-Tag = "noindex, nofollow, nosnippet, noarchive"
+
+[[headers]]
+  # 防止直接下载 HTML 文件
+  for = "/*.html"
+  [headers.values]
+    Content-Disposition = "inline"
+    Content-Type = "text/html; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
 
 [[redirects]]
   from = "/*"
