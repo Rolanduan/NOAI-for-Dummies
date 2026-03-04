@@ -58,11 +58,9 @@
 
 ## 👨‍💻 作者
 
-**Roland Duan**
+Roland Duan
 
-- 📕 小红书同名：Roland Duan
-- 专注于人工智能教育
-- 致力于让 AI 学习更简单、更有趣
+📕 小红书同名：Roland Duan
 
 ---
 
