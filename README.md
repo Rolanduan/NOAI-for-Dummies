@@ -1,52 +1,37 @@
-# Roadmap Visualization Project
+# NOAI-for-Dummies
 
-This project aims to generate a nature-style vertical technical roadmap using Matplotlib. The roadmap serves as a graphical abstract that outlines the problem space, formulation, solution architecture, integration, and deployment strategies for emergency building sweeps.
+NOAI 2026 全国中学生人工智能学术活动完整学习指南
 
-## Project Structure
+## 项目简介
 
-```
-roadmap-visualization
-├── notebooks
-│   └── roadmap.ipynb          # Jupyter notebook for generating the roadmap
-├── src
-│   ├── __init__.py            # Marks the directory as a Python package
-│   ├── generate_roadmap.py     # Script to execute the roadmap generation logic
-│   ├── viz
-│   │   ├── styles.py           # Style configurations for the visualization
-│   │   └── elements.py         # Functions for creating visual elements
-│   └── utils.py                # Utility functions for various tasks
-├── requirements.txt            # Required Python packages
-├── environment.yml             # Conda environment specifications
-├── .gitignore                  # Files and directories to ignore by Git
-├── Makefile                    # Automation commands for project tasks
-└── README.md                   # Documentation for the project
-```
+这是一个完整的 NOAI 2026 学习指南，包含机器学习、深度学习、强化学习等核心知识点，配有详细的 SVG 图示和练习题。
 
-## Installation
+## 在线访问
 
-To set up the project, you can create a conda environment using the provided `environment.yml` file:
+本网站已部署在 Netlify 上，可以直接在浏览器中访问。
 
-```bash
-conda env create -f environment.yml
-```
+## 本地使用
 
-Alternatively, you can install the required packages listed in `requirements.txt`:
+1. 下载 `NOAI_2026_StudyGuide.html` 文件
+2. 在浏览器中打开即可查看
 
-```bash
-pip install -r requirements.txt
-```
+## 主要内容
 
-## Usage
+- 第一部分：知识表示
+- 第二部分：机器学习基础
+- 第三部分：机器学习进阶
+- 第四部分：AI系统与前沿
 
-1. Open the Jupyter notebook located in the `notebooks` directory:
-   - `notebooks/roadmap.ipynb`
-   
-2. Run the cells in the notebook to generate and export the roadmap visualization.
+## 技术栈
 
-## Contributing
+- 纯 HTML + CSS + JavaScript
+- SVG 交互式图示
+- 响应式设计，支持移动端
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+## 部署
+
+本网站使用 Netlify 托管，配置文件为 `netlify.toml`。
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Copyright © 2026 Kaiyao Duan
