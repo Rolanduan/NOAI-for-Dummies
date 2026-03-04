@@ -27,7 +27,6 @@ node_modules/
 *_enhanced.html
 *_final.html
 NOAI_*.html
-!NOAI_2026_StudyGuide.html
 
 # 报告文件
 *_REPORT.md
